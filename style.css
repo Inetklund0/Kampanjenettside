@@ -1,0 +1,95 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0; 
+}
+
+body{
+    background-color: #eee;
+    font-family: Arial;   
+}
+
+main{
+    margin:200px;
+    margin-top:10px;
+    padding:20px; 
+}
+    
+img{
+    margin: 0;
+}
+
+h1{
+    margin-bottom:20px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.fargebak{
+    background: rgba(178, 206, 202, 0.589);
+    padding: 10px;
+}
+
+.start{
+    margin-bottom: 30px;
+}
+
+.kortInfo{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+    /* display: flex  */
+    /* Flex er problem for å få lik bredde på de ulike kolonene */
+}
+
+.giver{
+    background: rgb(115,192,176);
+    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
+    border: none;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 30px;
+    
+}
+
+a{
+    border: none;
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.innhold{
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+.lesMer{
+    background: rgb(115,192,176);
+    background: linear-gradient(90deg, rgba(115,192,176,1) 14%, rgba(70,156,207,1) 61%);
+    border: none;
+    width: 60px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+
+/* footer{
+    background-color: #73c0b0;
+    margin-top: 20px;
+    padding: 15px;
+    
+} */
