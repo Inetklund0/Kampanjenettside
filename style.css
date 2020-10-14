@@ -20,15 +20,15 @@ blå: 469ccf*/
   }
   
   img{
-      width: 100vw;
-      height: 85vh;
-      object-fit: cover;
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    
   }
   .foto{
-      width: 70vw;
-      height: 70vh;
-      
-      margin-left: 100px;
+    width: 70vw;
+    height: 70vh;
+    margin-left: 100px;
   }
 
   .top {
@@ -40,17 +40,17 @@ blå: 469ccf*/
   }
 
   .introtekst{
-      position: absolute;
-      top: 30%;
-      left: 32%;
-      width: 480px;
-      font-style: italic;
-      line-height: 1.5;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    width: 480px;
+    font-style: italic;
+    line-height: 1.5;
   }
 
   h3{
-      padding-left: 555px;
-      padding-top: 30px;
+    padding-left: 555px;
+    padding-top: 30px;
   }
 
 .superhelt{
@@ -77,6 +77,11 @@ button{
     font-style: bold;
 }
 
+button:hover{
+    color: black;
+    background:#73c0b0;
+}
+
 .kortInfo{
     top: 30%;
     left: 32%;
@@ -89,25 +94,28 @@ button{
 
 .historie {
     position: absolute;
-    top: 1400px;
-    left: 62%;
-    width: 400px;
-    color: black;
+    top: 1350px;
+    left: 59%;
+    width: 450px;
+    color: whitesmoke;
     font-style: italic;
     background-color: #73c0b0;
+    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
     line-height: 1.5;
-    padding: 5px;
+    padding: 15px;
   }
 
   .brukersitat{
     position: absolute;
-    top: 1600px;
-    left: 62%;
-    width: 400px;
+    top: 1610px;
+    left: 59%;
+    width: 450px;
     font-style: italic;
     line-height: 1.5;
     background-color: #73c0b0;
-    padding: 5px;
+    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
+    color: white;
+    padding: 15px;
   }
 
   .spørsmål{
@@ -123,8 +131,13 @@ button{
     padding-bottom: 20px;
   }
 
+  .referanse{
+    font-size: 10px;
+    font-style: italic;
+    padding-top: 10px;
+  }
   footer{
-      background-color:#73c0b0;
-      margin-top: 30px;
-      padding: 80px;
+    background-color:#73c0b0;
+    margin-top: 30px;
+    padding: 80px;
   }
