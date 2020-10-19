@@ -184,7 +184,7 @@ a {
 
 .vismer h4::after {
 	content: "";
-	background-image: url(img/arrow.svg);
+	background-image: url(./Img/arrow.svg);
 	background-size: contain;
 	width: 1.2em;
 	height: 1.2em;
