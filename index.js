@@ -1,53 +1,23 @@
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+let elementList = document.querySelectorAll('.vismer');
 
-function myFunction1() {
-  var x = document.getElementById("myDIVE");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+elementList.forEach((element) => {
 
-function myFunction2() {
-  var x = document.getElementById("myDIVS");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+	// Get html elements
+	let titleElm = element.querySelector('h4');
+	let textElm = element.querySelector('p');
 
-function myFunction3() {
-  var x = document.getElementById("myDIVR");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+	// Store size of p
+	let rects = textElm.getClientRects();
+	textElm.setAttribute('start-height', rects[0].height);
+	textElm.style.height = 0; // hide box
 
-function myFunction4() {
-  var x = document.getElementById("myDIVT");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function myFunction5() {
-  var x = document.getElementById("myDIVO");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+	// handle click
+	titleElm.addEventListener('click', (event) => {
+		element.classList.toggle('open');
+		if(element.classList.contains('open')) {
+			textElm.style.height = textElm.getAttribute("start-height") +"px";
+		} else{
+			textElm.style.height = 0;
+		}
+	});
+});

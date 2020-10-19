@@ -1,143 +1,322 @@
 * {
-    box-sizing:border-box;
-    margin:0;
-    padding:0; 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    background-color: #eee;
-    font-family: Arial;   
+body {
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
 }
 
 /* Fargekoder
-Grønn: 73c0b0 
+Grønn: 73c0b0
 blå: 469ccf*/
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  img{
-    width: 100vw;
-    height: 85vh;
-    object-fit: cover;
-    
-  }
-  .foto{
-    width: 70vw;
-    height: 70vh;
-    margin-left: 100px;
-  }
-
-  .top {
-    position: absolute;
-    top: 20%;
-    left: 32%;
-    color: #73c0b0;
-    font-style: italic;
-  }
-
-  .introtekst{
-    position: absolute;
-    top: 30%;
-    left: 32%;
-    width: 480px;
-    font-style: italic;
-    line-height: 1.5;
-  }
-
-  h3{
-    padding-left: 555px;
-    padding-top: 30px;
-  }
-
-.superhelt{
-    columns: 5;
-    margin: 45px;
-    line-height: 1.5;
-    display: flex;
-    gap: 11px;
+	position: relative;
+	text-align: center;
+	color: white;
 }
 
-.steg{
-    border-right: #469ccf .5px solid;
-    padding-right: 5px;
+.flexbox {
+	display: flex;
+	max-width: 80vw;
+	min-height: 80vh;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	position: relative;
 }
 
-button{
-    padding: 20px;
-    margin-left: 540px;
-    background: rgb(115,192,176);
-    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
-    border-radius: 5px;
-    border: none;
-    color: whitesmoke;
-    font-style: bold;
+#top {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.096), rgba(127, 197, 199, 0.89)), url(./img/branimir-balogovic-fAiQRv7FgE0-unsplash.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-width: 100vw;
+	align-items: flex-start;
 }
 
-button:hover{
-    color: black;
-    background:#73c0b0;
+#top h1 {
+	font-size: 5rem;
+	text-align: center;
+	padding-top: 60px;
+	color: #73c0b0;
 }
 
-.kortInfo{
-    top: 30%;
-    left: 32%;
-    width: 700px;
-    margin-left: 300px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    line-height: 1.5;
+#top #introtekst {
+	position: absolute;
+	color: #eee;
+	top: 40vh;
+	width: 40vw;
+	font-weight: bold;
+	line-height: 1.25;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 1.7rem;
+}
+
+.superhelt {
+	columns: 5;
+	margin: 45px;
+	line-height: 1.5;
+	display: flex;
+	gap: 11px;
+}
+
+.steg {
+	border-left: #469ccf .5px solid;
+	padding: 0 10px 0 15px;
+	max-width: 20vw;
+}
+
+.container1 {
+	text-align: center;
+	color: black;
+}
+
+button {
+	padding: 20px 10px 20px 10px;
+	background: rgb(115, 192, 176);
+	background: linear-gradient(90deg, rgba(115, 192, 176, 1) 31%, rgba(70, 156, 207, 1) 61%);
+	border-radius: 5px;
+	border: none;
+	color: whitesmoke;
+	font-weight: 600;
+	width: 15vw;
+}
+
+button:hover {
+	background: #73c0b0;
+}
+
+.kortinfo {
+	padding: 60px 0 60px 0;
+	width: 40vw;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.axel {
+	display: flex;
+	width: 90vw;
+	justify-content: center;
+	margin: auto;
+}
+
+.foto {
+	max-width: 50vw;
+	max-height: 60vh;
 }
 
 .historie {
-    position: absolute;
-    top: 1350px;
-    left: 59%;
-    width: 450px;
-    color: whitesmoke;
-    font-style: italic;
-    background-color: #73c0b0;
-    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
-    line-height: 1.5;
-    padding: 15px;
-  }
+	position: right;
+	width: 30vw;
+	max-height: 60vh;
+	color: whitesmoke;
+	background-color: #73c0b0;
+	background: linear-gradient(90deg, rgba(115, 192, 176, 1) 31%, rgba(70, 156, 207, 1) 61%);
+	line-height: 1.5;
+	padding: 15px;
+}
 
-  .brukersitat{
-    position: absolute;
-    top: 1610px;
-    left: 59%;
-    width: 450px;
-    font-style: italic;
-    line-height: 1.5;
-    background-color: #73c0b0;
-    background: linear-gradient(90deg, rgba(115,192,176,1) 31%, rgba(70,156,207,1) 61%);
-    color: white;
-    padding: 15px;
-  }
+.referanse {
+	font-size: 10px;
+	font-style: italic;
+	padding-top: 10px;
+}
 
-  .spørsmål{
-    margin-left: 300px;
-    padding-top: 50px;
-    line-height: 3;
-    margin-bottom: 40px;
-  }
+a {
+	text-decoration: none;
+	color: white;
+}
 
-  .brosjyre{
-    margin-left: 470px;
-    width: 300px;
-    padding-bottom: 20px;
-  }
+/* Spørsmål seksjon */
 
-  .referanse{
-    font-size: 10px;
-    font-style: italic;
-    padding-top: 10px;
-  }
-  footer{
-    background-color:#73c0b0;
-    margin-top: 30px;
-    padding: 80px;
-  }
+.sporsmal {
+	width: 60vw;
+	padding: 60px 0 20px 0;
+	line-height: 3;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	row-gap: .5rem;
+	column-gap: 10vw;
+	margin: auto;
+	/* border-left: #469ccf .5px solid;
+	padding-left: 5px;
+	display: grid;
+	grid-template-columns: 30vw 30vw;
+	column-gap: 10vw; */
+}
+
+.vismer {
+	margin-bottom: 2.5rem;
+	max-width: 25vw;
+	display: flex;
+  	flex-direction: column;
+  	flex-basis: 100%;
+	flex: 1;
+}
+
+.vismer h4 {
+	min-width: 500px;
+	text-transform: uppercase;
+	user-select: none;
+	cursor: pointer;
+}
+
+.vismer h4::after {
+	content: "";
+	background-image: url(Img/arrow.svg);
+	background-size: contain;
+	width: 1.2em;
+	height: 1.2em;
+	transform: translate(0, 13px) rotate(180deg);
+	float: right;
+}
+
+.vismer.open h4::after {
+	transform: translate(0, 13px) rotate(0);
+}
+
+.vismer p {
+	line-height: 1.375rem;
+	overflow: hidden;
+	transition: height 0.2s ease-in-out;
+}
+
+/*****************************************/
+
+#brosjyre {
+	width: 14vw;
+	margin: auto;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+footer {
+	background-color: #73c0b0;
+	margin-top: 30px;
+	padding: 80px;
+}
+
+#foottext {
+	color: #eee;
+	text-align: center;
+}
+/* 
+.fa {
+	padding: 20px;
+	font-size: 40px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+  
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+} */
+
+@media (max-width: 600px) {
+	#top h1 {
+		font-size: 2.5rem;
+		padding-top: 40px;
+		max-width: 80vw;
+	}
+
+	#top #introtekst {
+		width: 70vw;
+		font-size: 1.2rem;
+	}
+
+	.kortinfo {
+		width: 70vw;
+		font-size: 1.2rem;
+		padding: 40px 0 40px 0;
+	}
+
+	h3 {
+		text-align: center;
+		padding-top: 30px;
+		font-size: 1.2rem;
+	}
+
+	.superhelt {
+		flex-direction: column;
+	}
+
+	.steg {
+		border-left: #469ccf .5px solid;
+		padding: 0 10px 0 15px;
+		max-width: 80vw;
+	}
+
+	.axel {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0;
+	}
+
+	.foto {
+		min-width: 100vw;
+	}
+
+	.historie {
+		position: right;
+		width: 100vw;
+		max-height: 70vh;
+		line-height: 1.5;
+		padding: 15px;
+	}
+
+	.sporsmal {
+		flex-direction: column;
+		margin: 0;
+		padding: 5vh 5vw 0 5vw;
+	}
+
+	.vismer {
+		max-width: 70vw;
+	}
+
+	.vismer h4 {
+		min-width: 80vw;
+		padding-bottom: 10px;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	button {
+		width: 50vw;
+	}
+
+	#brosjyre {
+		width: 45vw;
+		margin: auto;
+		font-size: .8rem;
+		padding-bottom: 20px;
+	}
+
+	footer {
+		padding: 50px;
+	}
+}
