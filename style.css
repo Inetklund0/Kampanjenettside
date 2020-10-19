@@ -90,6 +90,7 @@ button {
 	color: whitesmoke;
 	font-weight: 600;
 	width: 15vw;
+	cursor: pointer;
 }
 
 button:hover {
@@ -105,6 +106,8 @@ button:hover {
 	line-height: 1.5;
 	font-weight: 600;
 }
+
+
 
 .axel {
 	display: flex;
@@ -140,6 +143,11 @@ a {
 	color: white;
 }
 
+#registrer {
+	color: black;
+	text-decoration: underline;
+}
+
 /* Spørsmål seksjon */
 
 .sporsmal {
@@ -152,8 +160,7 @@ a {
 	row-gap: .5rem;
 	column-gap: 10vw;
 	margin: auto;
-	/* border-left: #469ccf .5px solid;
-	padding-left: 5px;
+	/*
 	display: grid;
 	grid-template-columns: 30vw 30vw;
 	column-gap: 10vw; */
@@ -177,7 +184,7 @@ a {
 
 .vismer h4::after {
 	content: "";
-	background-image: url(Img/arrow.svg);
+	background-image: url(img/arrow.svg);
 	background-size: contain;
 	width: 1.2em;
 	height: 1.2em;
@@ -236,6 +243,111 @@ footer {
 	color: white;
 } */
 
+@media (max-width: 1500px){
+	.foto {
+		min-width: 50vw;
+		max-height: 80vh;
+	}
+
+	.historie {
+		width: 45vw;
+		max-height: 80vh;
+	}
+}
+
+@media (max-width: 1400px){
+	.foto {
+		max-width: 60vw;
+	}
+	
+	.historie {
+		width: 45vw;
+		max-height: 60vh;
+	}
+
+	.sporsmal {
+		width: 80vw;
+		column-gap: 15vw;
+		margin: auto;
+	}
+}
+
+@media (max-width: 1300px){
+	.historie {
+		width: 40vw;
+		max-height: 60vh;
+	}
+
+	.sporsmal {
+		width: 80vw;
+		margin: auto;
+	}
+
+	.vismer {
+		max-width: 30vw;
+	}
+}
+
+@media (max-width: 900px){
+	.kortinfo {
+		font-size: 1.25rem;
+		padding: 40px 0 40px 0;
+		width: 60vw;
+	}
+
+	.superhelt {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: .5rem;
+		column-gap: 2vw;
+	}
+
+	.steg {
+		flex-direction: column;
+  		flex-basis: 100%;
+		flex: 1;
+		font-size: .9rem;
+		min-width: 25vw;
+	}
+
+	.axel {
+		max-width: 100vw;
+		margin: auto;
+	}
+
+	.foto {
+		max-width: 50vw;
+	}
+
+	.historie {
+		min-width: 50vw;
+		max-height: 60vh;
+		line-height: 1.2;
+		padding: 20px;
+		font-size: .95rem;
+	}
+
+    .sporsmal {
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.vismer {
+		max-width: 50vw;
+	}
+
+	#brosjyre {
+		width: 25vw;
+		font-size: 1rem;
+		padding-bottom: 20px;
+	}
+
+	button {
+		width: 25vw;
+	}
+}
+
 @media (max-width: 600px) {
 	#top h1 {
 		font-size: 2.5rem;
@@ -252,12 +364,6 @@ footer {
 		width: 70vw;
 		font-size: 1.2rem;
 		padding: 40px 0 40px 0;
-	}
-
-	h3 {
-		text-align: center;
-		padding-top: 30px;
-		font-size: 1.2rem;
 	}
 
 	.superhelt {
