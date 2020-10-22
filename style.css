@@ -218,10 +218,12 @@ a {
 }
 
 footer{
-	
 	background-color: #73c0b0;
 	color: #eee;
 	margin-top: 16vh;
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	padding:5vh;
 }
 
 footer p{
@@ -428,6 +430,7 @@ footer h3{
 
 	footer {
 		padding: 50px;
+		grid-template-columns: 1fr;
 	}
 
 	footer p{
