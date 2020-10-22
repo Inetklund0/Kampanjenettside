@@ -87,6 +87,7 @@ h3 {
 
 button {
 	padding: 20px 10px 20px 10px;
+	margin-top: 5vh;
 	background: rgb(115, 192, 176);
 	background: linear-gradient(90deg, rgba(115, 192, 176, 1) 31%, rgba(70, 156, 207, 1) 61%);
 	border-radius: 5px;
@@ -95,6 +96,7 @@ button {
 	font-weight: 600;
 	width: 15vw;
 	cursor: pointer;
+	font-size: 1rem;
 }
 
 button:hover {
@@ -128,8 +130,8 @@ button:hover {
 	width: 30vw;
 	max-height: 60vh;
 	color: whitesmoke;
-	background-color: #73c0b0;
-	background: linear-gradient(90deg, rgba(115, 192, 176, 1) 31%, rgba(70, 156, 207, 1) 61%);
+	background: rgb(70,156,207);
+	/* background: linear-gradient(180deg, rgba(70,156,207,1) 31%, rgba(115,192,176,1) 95%); */
 	line-height: 1.5;
 	padding: 15px;
 }
@@ -210,13 +212,30 @@ a {
 #brosjyre {
 	width: 14vw;
 	margin: auto;
+	margin-bottom: -5vh;
 	padding-bottom: 20px;
 	text-align: left;
 }
 
 footer{
-	height: 12vh;
-	background-color: #eee;
+	
+	background-color: #73c0b0;
+	color: #eee;
+	margin-top: 16vh;
+}
+
+footer p{
+	width: 48vw;
+	padding: 30px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	line-height: 1.5;
+}
+
+footer h3{
+	font-size: 20px;
 }
 
 @media (max-width: 1500px){
@@ -409,5 +428,9 @@ footer{
 
 	footer {
 		padding: 50px;
+	}
+
+	footer p{
+		width: 70vw;
 	}
 }
