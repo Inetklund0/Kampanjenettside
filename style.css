@@ -239,6 +239,7 @@ footer p{
 footer h3{
 	font-size: 20px;
 }
+
 @media (max-width: 1500px){
 	.foto {
 		min-width: 50vw;
@@ -777,13 +778,13 @@ footer h3{
 	.vismer h4 {
 		max-width: 50vw;
 		padding-bottom: 10px;
-		font-size: .7rem;
+		font-size: .9rem;
 		line-height: 1.4;
 	}
 
 	.vismer p{
-		width: 60vw;
-		font-size: .6rem;
+		width: 40vw;
+		font-size: .8rem;
 	}
 
 	button {
