@@ -591,13 +591,13 @@ footer h3{
 	.vismer h4 {
 		min-width: 40vw;
 		padding-bottom: 10px;
-		font-size: .8rem;
+		font-size: 1rem;
 		line-height: 1.4;
 	}
 
 	.vismer p{
 		width: 27vw;
-		font-size: .8rem;
+		font-size: .9rem;
 	}
 
 	button {
@@ -679,7 +679,7 @@ footer h3{
 	}
 
 	.vismer {
-		max-width: 70vw;
+		max-width: 40vw;
 	}
 
 	.vismer h4 {
@@ -772,7 +772,7 @@ footer h3{
 	}
 
 	.vismer {
-		max-width: 60vw;
+		max-width: 40vw;
 	}
 
 	.vismer h4 {
