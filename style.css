@@ -31,7 +31,7 @@ blå: 469ccf*/
 }
 
 #top {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.096), rgba(127, 197, 199, 0.89)), url(./Img/branimir-balogovic.jpg);
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.096), rgba(127, 197, 199, 0.89)), url(./Img/branimirbalogovic.jpg);
 	background-size: cover;
 	background-position: center center;
 	min-width: 100vw;
@@ -156,15 +156,15 @@ a {
 /* Spørsmål seksjon */
 
 .sporsmal {
-	width: 60vw;
-	padding: 60px 0 20px 0;
+	place-content: center;
+	padding: 40px 0 40px 0;
 	line-height: 3;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	flex-wrap: wrap;
 	row-gap: .5rem;
-	column-gap: 10vw;
-	margin: auto;
+	column-gap: 8vw;
+	margin-right: auto;
 	/*
 	display: grid;
 	grid-template-columns: 30vw 30vw;
@@ -181,7 +181,7 @@ a {
 }
 
 .vismer h4 {
-	min-width: 500px;
+	min-width: 40vw;
 	text-transform: uppercase;
 	user-select: none;
 	cursor: pointer;
@@ -239,7 +239,6 @@ footer p{
 footer h3{
 	font-size: 20px;
 }
-
 @media (max-width: 1500px){
 	.foto {
 		min-width: 50vw;
@@ -249,6 +248,11 @@ footer h3{
 	.historie {
 		width: 45vw;
 		max-height: 100vh;
+	}
+
+	.vismer {
+		max-width: 40vw;
+		
 	}
 }
 
@@ -262,11 +266,6 @@ footer h3{
 		max-height: 100vh;
 	}
 
-	.sporsmal {
-		width: 80vw;
-		column-gap: 15vw;
-		margin: auto;
-	}
 }
 
 @media (max-width: 1300px){
@@ -275,14 +274,6 @@ footer h3{
 		max-height: 60vh;
 	}
 
-	.sporsmal {
-		width: 80vw;
-		margin: auto;
-	}
-
-	.vismer {
-		max-width: 30vw;
-	}
 	.historie {
 		min-width: 35vw;
 		max-height: 100vh;
@@ -338,8 +329,9 @@ footer h3{
 	}
 
 	.vismer {
-		max-width: 50vw;
+		max-width: 45vw;
 	}
+
 
 	#brosjyre {
 		width: 25vw;
@@ -352,7 +344,7 @@ footer h3{
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 	#top h1 {
 		font-size: 2.3rem;
 		padding-top: 40px;
@@ -403,22 +395,27 @@ footer h3{
 	.sporsmal {
 		flex-direction: column;
 		margin: 0;
-		padding: 5vh 5vw 0 5vw;
+		padding: 10vh 10vw 0 10vw;
 	}
 
 	.vismer {
-		max-width: 70vw;
+		max-width: 50vw;
 	}
 
 	.vismer h4 {
-		min-width: 80vw;
+		min-width: 55vw;
 		padding-bottom: 10px;
 		font-size: 1rem;
 		line-height: 1.4;
 	}
 
+	.vismer p{
+		width: 43vw;
+	}
+
 	button {
-		width: 50vw;
+		width: 40vw;
+		
 	}
 
 	#brosjyre {
@@ -426,6 +423,380 @@ footer h3{
 		margin: auto;
 		font-size: .8rem;
 		padding-bottom: 20px;
+		visibility: hidden;
+	}
+
+	footer {
+		padding: 50px;
+		grid-template-columns: 1fr;
+	}
+
+	footer p{
+		width: 70vw;
+	}
+}
+
+@media (max-width: 900px){
+	#top h1 {
+		font-size: 2.3rem;
+		padding-top: 40px;
+		max-width: 90vw;
+	}
+
+	#top #introtekst {
+		width: 70vw;
+		font-size: 1.2rem;
+	}
+
+	.kortinfo {
+		width: 70vw;
+		font-size: 1.1rem;
+		padding: 40px 0 40px 0;
+		
+	}
+
+	.superhelt {
+		flex-direction: column;
+	}
+
+	.steg {
+		border-left: #469ccf .5px solid;
+		padding: 0 10px 0 15px;
+		max-width: 80vw;
+	}
+
+	.axel {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0;
+	}
+
+	.foto {
+		min-width: 100vw;
+	}
+
+	.historie {
+		position: right;
+		width: 100vw;
+		max-height: 100vh;
+		line-height: 1.5;
+		padding: 15px;
+		margin-bottom: 40px;
+	}
+
+	.sporsmal {
+		flex-direction: column;
+		margin: 0;
+		padding: 7vh 0vw 0 7vw;
+	}
+
+	.vismer {
+		max-width: 48vw;
+	}
+
+	.vismer h4 {
+		min-width: 45vw;
+		padding-bottom: 10px;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	.vismer p{
+		width: 40vw;
+	}
+
+	button {
+		width: 40vw;
+		
+	}
+
+	#brosjyre {
+		width: 45vw;
+		margin: auto;
+		font-size: .8rem;
+		padding-bottom: 20px;
+		visibility: hidden;
+	}
+
+	footer {
+		padding: 50px;
+		grid-template-columns: 1fr;
+	}
+
+	footer p{
+		width: 70vw;
+	}
+}
+
+@media (max-width: 840px ){
+	#top h1 {
+		font-size: 2.3rem;
+		padding-top: 40px;
+		max-width: 90vw;
+	}
+
+	#top #introtekst {
+		width: 70vw;
+		font-size: 1.2rem;
+	}
+
+	.kortinfo {
+		width: 70vw;
+		font-size: 1.1rem;
+		padding: 40px 0 40px 0;
+		
+	}
+
+	.superhelt {
+		flex-direction: column;
+	}
+
+	.steg {
+		border-left: #469ccf .5px solid;
+		padding: 0 10px 0 15px;
+		max-width: 80vw;
+	}
+
+	.axel {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0;
+	}
+
+	.foto {
+		min-width: 100vw;
+	}
+
+	.historie {
+		position: right;
+		width: 100vw;
+		max-height: 100vh;
+		line-height: 1.5;
+		padding: 15px;
+		margin-bottom: 40px;
+	}
+
+	.sporsmal {
+		flex-direction: column;
+		margin: 0;
+		padding: 7vh 10vw 0 7vw;
+		
+	}
+
+	.vismer {
+		max-width: 40vw;
+	}
+
+	.vismer h4 {
+		min-width: 40vw;
+		padding-bottom: 10px;
+		font-size: .8rem;
+		line-height: 1.4;
+	}
+
+	.vismer p{
+		width: 27vw;
+		font-size: .8rem;
+	}
+
+	button {
+		width: 40vw;
+		
+	}
+
+	#brosjyre {
+		width: 45vw;
+		margin: auto;
+		font-size: .8rem;
+		padding-bottom: 20px;
+		visibility: hidden;
+	}
+
+	footer {
+		padding: 50px;
+		grid-template-columns: 1fr;
+	}
+
+	footer p{
+		width: 70vw;
+	}
+}
+
+@media (max-width: 760px){
+	#top h1 {
+		font-size: 2.3rem;
+		padding-top: 40px;
+		max-width: 90vw;
+	}
+
+	#top #introtekst {
+		width: 70vw;
+		font-size: 1.2rem;
+	}
+
+	.kortinfo {
+		width: 70vw;
+		font-size: 1.1rem;
+		padding: 40px 0 40px 0;
+		
+	}
+
+	.superhelt {
+		flex-direction: column;
+	}
+
+	.steg {
+		border-left: #469ccf .5px solid;
+		padding: 0 10px 0 15px;
+		max-width: 80vw;
+	}
+
+	.axel {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0;
+	}
+
+	.foto {
+		min-width: 100vw;
+	}
+
+	.historie {
+		position: right;
+		width: 100vw;
+		max-height: 100vh;
+		line-height: 1.5;
+		padding: 15px;
+		margin-bottom: 40px;
+	}
+
+	.sporsmal {
+		flex-direction: column;
+		margin: 0;
+		padding: 10vh 10vw 0 10vw;
+		
+	}
+
+	.vismer {
+		max-width: 70vw;
+	}
+
+	.vismer h4 {
+		max-width: 20vw;
+		padding-bottom: 10px;
+		font-size: .7rem;
+		line-height: 1.4;
+	}
+
+	.vismer p{
+		width: 30vw;
+	}
+
+	button {
+		width: 40vw;
+		
+	}
+
+	#brosjyre {
+		width: 45vw;
+		margin: auto;
+		font-size: .8rem;
+		padding-bottom: 20px;
+		visibility: hidden;
+	}
+
+	footer {
+		padding: 50px;
+		grid-template-columns: 1fr;
+	}
+
+	footer p{
+		width: 70vw;
+	}
+}
+
+@media (max-width: 660px){
+	#top h1 {
+		font-size: 2.3rem;
+		padding-top: 40px;
+		max-width: 90vw;
+	}
+
+	#top #introtekst {
+		width: 70vw;
+		font-size: 1.2rem;
+	}
+
+	.kortinfo {
+		width: 70vw;
+		font-size: 1.1rem;
+		padding: 40px 0 40px 0;
+		
+	}
+
+	.superhelt {
+		flex-direction: column;
+	}
+
+	.steg {
+		border-left: #469ccf .5px solid;
+		padding: 0 10px 0 15px;
+		max-width: 80vw;
+	}
+
+	.axel {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0;
+	}
+
+	.foto {
+		min-width: 100vw;
+	}
+
+	.historie {
+		position: right;
+		width: 100vw;
+		max-height: 100vh;
+		line-height: 1.5;
+		padding: 15px;
+		margin-bottom: 40px;
+	}
+
+	.sporsmal {
+		flex-direction: column;
+		margin: 0;
+		padding: 7vh 7vw 0 7vw;
+		
+	}
+
+	.vismer {
+		max-width: 60vw;
+	}
+
+	.vismer h4 {
+		max-width: 50vw;
+		padding-bottom: 10px;
+		font-size: .7rem;
+		line-height: 1.4;
+	}
+
+	.vismer p{
+		width: 60vw;
+		font-size: .6rem;
+	}
+
+	button {
+		width: 40vw;
+		
+	}
+
+	#brosjyre {
+		width: 45vw;
+		margin: auto;
+		font-size: .8rem;
+		padding-bottom: 20px;
+		visibility: hidden;
 	}
 
 	footer {
